@@ -9,6 +9,7 @@ class Program
         {
             CapteurMeteo capteurValide = new CapteurMeteo("Capteur_Nord", 12.5, 45);
             Console.WriteLine("[Capteur 1] Le capteur est valide.");
+            Console.WriteLine($"Nom: {capteurValide.Nom}, Température: {capteurValide.Temperature}, Humidité: {capteurValide.Humidite}%");
         }
         catch (Exception ex)
         {
@@ -34,6 +35,7 @@ class Program
         {
             Console.WriteLine($"[Capteur 3] Erreur d'humidité : {ex.Message}");
         }
+
 
 
 
